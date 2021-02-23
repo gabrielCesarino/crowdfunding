@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #f3f3f3;
+}
+
+header {
+  background-image: url("./images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+
+  height: 400px;
+}
+
+.headerContainer {
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.headerContainer img {
+  object-fit: contain;
+}
+
+.menuNavigation {
+  display: flex;
+}
+
+.menuNavigation li {
+  color: white;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.menuNavigation li:last-child {
+  margin-right: 0;
+}
+
+.menuNavigation li a {
+  text-decoration: none;
+  color: white;
+}
+
+.logoProduct {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+#crowdfundingSection {
+  max-width: 800px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+#crowdfundingSection > img {
+  position: absolute;
+}
