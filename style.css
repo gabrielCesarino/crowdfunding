@@ -57,7 +57,7 @@ header {
   transform: translateX(-50%);
 }
 
-#crowdfundingSection {
+#crowdfundingInformation {
   max-width: 800px;
   position: absolute;
   top: 320px;
@@ -69,6 +69,65 @@ header {
   border-radius: 5px;
 }
 
-#crowdfundingSection > img {
-  position: absolute;
+.topInformation {
+  text-align: center;
+}
+
+.topInformation > strong {
+  font-size: 1.2rem;
+}
+
+.topInformation > p {
+  font-size: 1rem;
+  color: #b6b6b6;
+  margin-top: 10px;
+}
+
+.topInformationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.topInformationButtons button {
+  padding: 20px 30px;
+  border-radius: 40px;
+
+  border: none;
+  outline: none;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.topInformationButtons button:first-child {
+  color: white;
+  background-color: #05eeb4;
+  transition: background-color 0.2s;
+}
+
+.topInformationButtons button:first-child:hover {
+  background-color: #02c292ce;
+}
+
+.topInformationButtons button:last-child {
+  color: #a7a7a7;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  padding-right: 20px;
+
+  transition: background-color 0.2s;
+}
+
+.topInformationButtons button:last-child:hover {
+  background-color: #dddddd;
+}
+
+.topInformationButtons button:last-child > img {
+  margin-right: 10px;
+}
+
+.topInformationButtons button:hover {
+  cursor: pointer;
 }
