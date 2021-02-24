@@ -57,13 +57,15 @@ header {
   transform: translateX(-50%);
 }
 
-#crowdfundingInformation {
-  max-width: 800px;
+#crowdfundingSection {
   position: absolute;
   top: 320px;
   left: 50%;
   transform: translateX(-50%);
+}
 
+#crowdfundingInformation {
+  max-width: 800px;
   background-color: white;
   padding: 50px;
   border-radius: 5px;
@@ -130,4 +132,158 @@ header {
 
 .topInformationButtons button:hover {
   cursor: pointer;
+}
+
+#crowdfundingStatus {
+  max-width: 800px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+
+  margin-top: 20px;
+}
+
+.crowdfundingValues {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crowdfundingValues span {
+  max-width: 300px;
+}
+
+.crowdfundingValues span:first-child {
+  padding-right: 60px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.crowdfundingValues span:last-child {
+  padding-left: 60px;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.crowdfundingValues span strong {
+  font-size: 2.25rem;
+}
+
+.crowdfundingValues span p {
+  font-size: 1rem;
+  color: #b6b6b6;
+}
+
+.barProgressSection {
+  margin-top: 30px;
+}
+
+.barProgressSection > div {
+  height: 10px;
+  border-radius: 4px;
+  background: #b6b6b6;
+}
+
+.barProgressSection > div > div {
+  height: 10px;
+  border-radius: 4px;
+  background: #05eeb4;
+}
+
+.about {
+  max-width: 800px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+
+  margin-top: 20px;
+}
+
+.about > strong {
+  font-size: 1.2rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #8f8f8f;
+}
+
+.about > p {
+  margin-top: 35px;
+}
+
+.aboutFunding {
+  padding: 40px 20px;
+  margin-top: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.aboutFundingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutFundingHeader p {
+  color: #05eeb4;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.aboutFundingHeader strong {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.aboutFunding > p {
+  font-size: 0.9rem;
+  margin: 20px 0;
+}
+
+.aboutOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left strong {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.aboutOption button {
+  outline: none;
+  border: none;
+
+  border-radius: 30px;
+  padding: 20px;
+
+  background: #05eeb4;
+  transition: background-color 0.4s;
+}
+
+.aboutOption button:hover {
+  cursor: pointer;
+  background: #02c292ce;
+}
+
+.outofstock {
+  opacity: 0.4;
+}
+
+.outofstock p {
+  color: #b6b6b6;
+}
+
+.outofstock button {
+  background: #8f8f8f;
+}
+
+.outofstock button:hover {
+  cursor: initial;
+  background: #8f8f8f;
 }
