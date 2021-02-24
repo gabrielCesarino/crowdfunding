@@ -65,7 +65,7 @@ header {
 }
 
 #crowdfundingInformation {
-  max-width: 800px;
+  max-width: 980px;
   background-color: white;
   padding: 50px;
   border-radius: 5px;
@@ -135,7 +135,7 @@ header {
 }
 
 #crowdfundingStatus {
-  max-width: 800px;
+  max-width: 980px;
   background-color: white;
   padding: 50px;
   border-radius: 5px;
@@ -188,7 +188,7 @@ header {
 }
 
 .about {
-  max-width: 800px;
+  max-width: 980px;
   background-color: white;
   padding: 50px;
   border-radius: 5px;
@@ -286,4 +286,80 @@ header {
 .outofstock button:hover {
   cursor: initial;
   background: #8f8f8f;
+}
+
+.modalSection {
+  max-width: 980px;
+  background: white;
+  position: absolute;
+  z-index: 2;
+
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+  border-radius: 10px;
+
+  box-shadow: 2px 1px 30px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modalSectionHeader {
+  position: relative;
+}
+
+.modalSectionHeader span {
+  position: absolute;
+  right: 0;
+  font-weight: 800;
+}
+
+.modalSectionHeader span:hover {
+  cursor: pointer;
+}
+
+.modalSectionHeader strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.modalSectionHeader p {
+  padding-top: 20px;
+}
+
+.pledgeCard {
+  padding: 40px 20px;
+  margin-top: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.pledgeCard input[type="radio"] {
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.pledgeCard input[type="radio"]:checked {
+  border-color: #05eeb4;
+}
+
+.pledgeInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pledgeInfo > div {
+  display: flex;
+  align-items: center;
+}
+
+.pledgeInfo > div strong {
+  margin: 0 15px;
+}
+
+.pledgeCard .left strong {
+  font-size: 1.4rem;
 }
