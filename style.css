@@ -122,6 +122,17 @@ header {
   transition: background-color 0.2s;
 }
 
+.bookmarked {
+  color: #05eeb4 !important;
+  background: #8f8f8f;
+
+  transition: all 0.2s;
+}
+
+.bookmarked:hover {
+  background: #696969 !important;
+}
+
 .topInformationButtons button:last-child:hover {
   background-color: #dddddd;
 }
@@ -294,7 +305,7 @@ header {
   position: absolute;
   z-index: 2;
 
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -305,6 +316,62 @@ header {
   animation: modal 0.5s;
 }
 .modalBackground {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vmax;
+  height: 100vmax;
+  animation: modalback 1s ease-in;
+}
+
+.active {
+  display: initial;
+}
+
+@keyframes modalBack {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    margin-top: 400px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.modalSectionHeader {
+  position: relative;
+}
+
+.modalSectionHeader span {
+  position: absolute;
+  right: 0;
+  font-weight: 800;
+}
+
+.modalSectionHeader span:hover {
+  cursor: pointer;
+}
+
+.modalSectionHeader strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+modalBackground {
   display: none;
 
   position: absolute;
@@ -391,9 +458,80 @@ header {
 }
 
 .pledgeInfo > div strong {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .pledgeCard .left strong {
   font-size: 1.4rem;
+}
+
+.pledgeInfo label {
+  color: #05eeb4;
+  font-weight: 800;
+}
+
+.pledgeInfo label strong {
+  color: black;
+}
+.enterPledge {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.enterPledge > span {
+  display: flex;
+  align-items: center;
+}
+
+.pledgeValue {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 100px;
+  border-radius: 30px;
+}
+
+.pledgeValue p {
+  margin-left: 10px;
+}
+
+.pledgeValue input {
+  outline: none;
+  border: none;
+  width: 40px;
+
+  margin-left: 15px;
+
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.enterPledge > span button {
+  margin-left: 10px;
+  height: 50px;
+  width: 100px;
+
+  border-radius: 30px;
+  outline: none;
+  border: none;
+
+  background: #05eeb4;
+  color: white;
+
+  font-weight: 800;
+
+  transition: background-color 0.3s;
+}
+
+.enterPledge > span button:hover {
+  cursor: pointer;
+  background: #02c292ce;
 }

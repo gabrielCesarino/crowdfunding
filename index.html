@@ -46,8 +46,9 @@
           </p>
           <div class="topInformationButtons">
             <button type="button" class="backButton">Back this project</button>
-            <button type="button">
-              <img src="./images/icon-bookmark.svg" />Bookmark
+            <button type="button" class="bookmarkButton">
+              <img src="./images/icon-bookmark.svg" />
+              <p>Bookmark</p>
             </button>
           </div>
         </div>
@@ -162,7 +163,7 @@
 
         <div class="modalPledge">
           <form>
-            <div class="pledgeCard">
+            <div class="pledgeCard" id="noreward">
               <span class="pledgeInfo">
                 <div>
                   <input type="radio" name="pledgeSection" id="noreward" />
@@ -176,13 +177,23 @@
                 our project. As a backer, you will be signed up to receive
                 product updates via email.
               </p>
+              <div class="enterPledge">
+                <p>Enter your pledge</p>
+                <span>
+                  <span class="pledgeValue">
+                    <p>$</p>
+                    <input type="text" value="25" />
+                  </span>
+                  <button>Continue</button>
+                </span>
+              </div>
             </div>
 
-            <div class="pledgeCard">
+            <div class="pledgeCard" id="bamboo">
               <span class="pledgeInfo">
                 <div>
                   <input type="radio" name="pledgeSection" id="bamboo" />
-                  <label for="noreward">
+                  <label for="bamboo">
                     <strong>Bamboo Stand</strong>Pledge $25 or more</label
                   >
                 </div>
@@ -196,13 +207,24 @@
                 us launch our promotional campaign, and you’ll be added to a
                 special Backer member list.
               </p>
+
+              <div class="enterPledge">
+                <p>Enter your pledge</p>
+                <span>
+                  <span class="pledgeValue">
+                    <p>$</p>
+                    <input type="text" value="25" />
+                  </span>
+                  <button>Continue</button>
+                </span>
+              </div>
             </div>
 
-            <div class="pledgeCard">
+            <div class="pledgeCard" id="black">
               <span class="pledgeInfo">
                 <div>
                   <input type="radio" name="pledgeSection" id="black" />
-                  <label for="noreward">
+                  <label for="black">
                     <strong>Black Edition Stand</strong>Pledge $75 or
                     more</label
                   >
@@ -217,13 +239,24 @@
                 thank you. You’ll be added to our Backer member list. Shipping
                 is included.
               </p>
+
+              <div class="enterPledge">
+                <p>Enter your pledge</p>
+                <span>
+                  <span class="pledgeValue">
+                    <p>$</p>
+                    <input type="text" value="25" />
+                  </span>
+                  <button>Continue</button>
+                </span>
+              </div>
             </div>
 
-            <div class="pledgeCard">
+            <div class="pledgeCard" id="Mhogany">
               <span class="pledgeInfo">
                 <div>
                   <input type="radio" name="pledgeSection" id="Mhogany" />
-                  <label for="noreward">
+                  <label for="Mhogany">
                     <strong>Mahogany Special Edition</strong>Pledge $200 or
                     more</label
                   >
@@ -238,6 +271,17 @@
                 and a personal thank you. You’ll be added to our Backer member
                 list. Shipping is included.
               </p>
+
+              <div class="enterPledge">
+                <p>Enter your pledge</p>
+                <span>
+                  <span class="pledgeValue">
+                    <p>$</p>
+                    <input type="text" value="25" />
+                  </span>
+                  <button>Continue</button>
+                </span>
+              </div>
             </div>
           </form>
         </div>
